@@ -1,0 +1,177 @@
+<div class="blog-details pt-50 pb-50" id="blog-details">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-8">
+        <div class="blog-details-area">
+          <div class="blog-details-single">
+            <div class="image">
+              <img
+              src="data:image/{{blogData[0].extension}};base64,{{blogData[0].image}}"
+                class="img-fluid"
+                alt="image"
+              />
+            </div>
+            <h3>
+              {{blogData[0].subTitle}}
+            </h3>
+            
+            <ul class="meta ms-0 ps-0">
+              <li class="author">
+                
+                <span class="category-sub-title"> {{blogData[0].title}}</span>
+              </li>
+              <li class="date">
+                
+                <span>{{blogData[0].date}}</span>
+              </li>
+            </ul>
+            <div [innerHTML]="blogData[0].text" class="content">
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="blog-sidebar">
+          <div class="blog-widget-item">
+            <div class="search-area">
+              <div class="blog-widget-body">
+                <form>
+                  <div class="search-with-btn">
+                    <input type="text" placeholder="Search Here" />
+                    <button><i class="bi bi-search"></i></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="blog-widget-item">
+            <div class="recent-blog">
+              <h5 class="blog-widget-title">Recent Posts</h5>
+              <div class="blog-widget-body">
+                <ul class="recent-post-list">
+                  <li *ngFor="let blog of blogArray;let i=index">
+                     <a href="blog-detail?id={{blog.id}}">
+                      <div class="recent-post-item">
+                        <div class="recent-post-img">
+                          <img
+                            src="data:image/{{blog.image.fileName}};base64,{{blog.image.data}}"
+                            alt="image" width="70px"
+                          />
+                        </div>
+                        <div class="recent-post-content">
+                          <h6>
+                            {{blog.subTitle}}
+                          </h6>
+                          <div class="meta">
+                            <img
+                              src="assets/images/post-calendar.svg"
+                              alt="image" 
+                            />
+                            <p>{{blog.date}}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="blog-widget-item">
+            <div class="blog-category">
+              <h5 class="blog-widget-title">Post Category</h5>
+              <div class="blog-widget-body">
+                <ul class="category-list">
+                  <li>
+                    <a href="#"
+                      ><span>Branding</span
+                      ><span><i class="bi bi-chevron-right"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span>Creative Agency</span
+                      ><span><i class="bi bi-chevron-right"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span>One Page Template</span
+                      ><span><i class="bi bi-chevron-right"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span>Inspiration</span
+                      ><span><i class="bi bi-chevron-right"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span>Business</span
+                      ><span><i class="bi bi-chevron-right"></i></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="blog-widget-item">
+            <div class="post-tag">
+              <h5 class="blog-widget-title">Post Tag</h5>
+              <div class="blog-widget-body">
+                <ul
+                  class="tag-list d-flex justify-content-start flex-wrap gap-4"
+                >
+                  <li><a href="#">Advertising</a></li>
+                  <li><a href="#">Website UI</a></li>
+                  <li><a href="#">Agency</a></li>
+                  <li><a href="#">Advertising</a></li>
+                  <li><a href="#">ui/Ux </a></li>
+                  <li><a href="#">Website UI</a></li>
+                  <li><a href="#">branding</a></li>
+                  <li><a href="#">agency branding</a></li>
+                  <li><a href="#">Website UI</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="blog-widget-item">
+            <div class="follow-area">
+              <h5 class="blog-widget-title mb-1">Follow Us</h5>
+              <p class="para">Follow us on Social Network</p>
+              <div class="blog-widget-body">
+                <ul class="follow-list d-flex flex-row align-items-start gap-4">
+                  <li>
+                    <a href="https://www.facebook.com/"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.twitter.com/"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/"
+                      ><i class="fa fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.pinterest.com/"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

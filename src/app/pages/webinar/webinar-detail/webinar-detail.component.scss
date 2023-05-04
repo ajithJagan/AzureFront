@@ -1,0 +1,42 @@
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+}
+
+.webinar-info {
+    padding: 30px 25px;
+    box-shadow: 3px 4px 30px rgba(136,136,136,.1);
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 30px auto;
+
+    h4 {
+        padding-top: 25px;
+    }
+}
+
+.webinar-right-info {
+
+    .webinar-btn {
+        background-color: #bb0b0b;
+        border: 1px solid #bb0b0b;
+        
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+
+    .webinar-btn:hover {
+        background-color: #ffffff;        
+        
+        a {
+            color: #bb0b0b;
+            text-decoration: none;
+        }
+    }
+}

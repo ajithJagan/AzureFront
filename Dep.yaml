@@ -1,0 +1,25 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: qbx-ui
+  namespace: testing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: qbx-ui
+  template:
+    metadata:
+      labels:
+        app: qbx-ui
+    spec:
+      containers:
+        - name: qbx-ui
+          image: ajiqbrainx/qbx-ui:1
+          ports:
+            - containerPort: 80
+
+
+
+
+            

@@ -1,0 +1,540 @@
+  <!-- Banner Section Start -->
+  <div id="carouselExampleCaptions" class="carousel slider carousel-fade" data-bs-ride="carousel" data-bs-pause="false" carousel-fade> 
+ <div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleCaptions"  *ngFor="let banner of bannerArray;let i=index"  class="{{ i == 0 ? 'active' : '' }}" attr.data-bs-slide-to="{{i}}" aria-current="true" aria-label="Slide 1"></button>
+    <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>  -->
+</div>
+<div class="carousel-inner" *ngFor="let banner of bannerArray;let i=index">
+      <div class="carousel-item {{ i == 0 ? 'active' : '' }}"  >
+        <img src="data:image/{{banner.extension}};base64,{{banner.image}}" class="d-block w-100" alt="...">
+          <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="banner-title">{{banner.title}}</h1>
+            <h4 class="banner-desc">{{banner.description}}</h4>
+            <p class="banner-btn-btm"><a class="btn btn-md banner-btn" href="{{banner.buttonlink}}" role="button"><i class="icon-truck"></i>{{banner.buttonName}}</a></p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+<!--Banner Section End  -->
+
+<!--Core Services Start  -->
+<section class="service-section pb-5">
+  <div class="row">
+    <div class="col-md-12 p-0">
+      <ul class="slides">
+        <input type="radio" name="radio-btn" id="img-1" value="1" [(ngModel)]="selected" />
+        <li class="slide-container">
+        <div class="slide d-flex align-items-center" id="slide-1">
+          <div class="service-info col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <span>-OUR CORE SERVICES-</span>
+            <h2>ServiceNow Implementation</h2>
+            <p>We provide world-class ServiceNow consulting and implementation services to assist enterprises in maximizing the workflows and automate the business processes with a seamless customer experience.</p>
+            <a routerLink="service" class="btn">Discover More</a>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <img src="assets/images/servicenow-img.png"/>
+          </div>
+        </div>
+        </li>
+
+        <input type="radio" name="radio-btn" id="img-2" value="2" [(ngModel)]="selected"/>
+        <li class="slide-container">
+          <div class="slide d-flex align-items-center" id="slide-2">
+            <div class="service-info col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <span>-OUR CORE SERVICES-</span>
+              <h2>Salesforce</h2>
+              <p>QBrainX's Salesforce professional services include Salesforce consulting, implementation, integration, and support, as well as other services aimed at maximizing Salesforce's business potential.</p>
+              <button class="btn">Discover More</button>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <img src="assets/images/sales-force-img.jpg"/>
+            </div>
+          </div>
+        </li>
+
+        <input type="radio" name="radio-btn" id="img-3" value="3" [(ngModel)]="selected"/>
+        <li class="slide-container">
+          <div class="slide d-flex align-items-center" id="slide-3">
+            <div class="service-info col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <span>-OUR CORE SERVICES-</span>
+              <h2>Digital Transformation</h2>
+              <p>We help businesses to accelerate their Digital Transformation by leveraging our extensive knowledge and experts in devices, apps, and analytics.</p>
+              <button class="btn">Discover More</button>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <img src="assets/images/digital transformation.jpg"/>
+            </div>
+          </div>
+        </li>
+
+        <input type="radio" name="radio-btn" id="img-4" value="4" [(ngModel)]="selected"/>
+        <li class="slide-container">
+          <div class="slide d-flex align-items-center" id="slide-4">
+            <div class="service-info col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <span>-OUR CORE SERVICES-</span>
+              <h2>IT Consulting & Services</h2>
+              <p>Our IT services have facilitated business performance improvement and speedy client acquisition for our various global clients.</p>
+              <button class="btn">Discover More</button>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <img src="assets/images/it consulting services.jpg"/>
+            </div>
+          </div>
+        </li>
+
+        <input type="radio" name="radio-btn" id="img-5" value="5" [(ngModel)]="selected"/>
+        <li class="slide-container">
+          <div class="slide d-flex align-items-center" id="slide-5">
+            <div class="service-info col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <span>-OUR CORE SERVICES-</span>
+              <h2>Scala Development</h2>
+              <p>We offer Scala web development services to address business challenges and improve the applications scalability, usability, and ability to handle issues.</p>
+              <button class="btn">Discover More</button>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <img src="assets/images/digital transformation-01.jpg"/>
+            </div>
+          </div>
+        </li>
+
+        <input type="radio" name="radio-btn" id="img-6" value="6" [(ngModel)]="selected"/>
+        <li class="slide-container">
+          <div class="slide d-flex align-items-center" id="slide-6">
+            <div class="service-info col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <span>-OUR CORE SERVICES-</span>
+              <h2>Data Solutions</h2>
+              <p>We help you to transform the legacy data solution into performance intensive & cost effective intelligent solutions, by consistently managing and proactively supporting the deployed solutions.</p>
+              <button class="btn">Discover More</button>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <img src="assets/images/data-solutions-img.jpg"/>
+            </div>
+          </div>
+        </li>
+        <li class="nav-dots">
+          <div class="dot" >
+          <label for="img-1" class="nav-dot" id="img-dot-1" (click)="showimg()"></label>
+          <label for="img-2" class="nav-dot" id="img-dot-2" (click)="showimg()"></label>
+          <label for="img-3" class="nav-dot" id="img-dot-3" (click)="showimg()"></label>
+          <label for="img-4" class="nav-dot" id="img-dot-4" (click)="showimg()"></label>
+          <label for="img-5" class="nav-dot" id="img-dot-5" (click)="showimg()"></label>
+          <label for="img-6" class="nav-dot" id="img-dot-6" (click)="showimg()"></label>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--Core Services End  -->
+
+<!--About Section Start  -->
+<section class="about-section pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 about-image">
+        <img src="assets/images/about-image.png" alt="about-image" height="100%" width="100%">
+      </div>
+      <div class="col-md-7 about-info">
+        <div class="d-flex">
+          <div class="info-top">
+            <span>-WHO WE ARE-</span>
+            <h2>We Provide essential IT Services that vow your success.</h2>
+            <p>We are on a mission to empower and strengthen businesses across various domains and make them the best in business. We strive to remain unique with our methods and approach while adhering to the values we’ve been following since our start.</p>
+            <button routerLink="/about" class="btn">Discover More</button>
+          </div>
+          <div class="info-bottom d-flex"> 
+            <div class="news"  *ngFor="let info of whoweareinfoArray;let i=index">
+              <img src="data:image/{{info.extension}};base64,{{info.image}}" alt="...">
+              <div class="news-info d-flex justify-content-between align-items-center">
+                <h5 style="text-align: left !important;">{{info.description}}</h5>
+                <a routerLink="{{info.link}}" class="arrow"><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div> 
+          <!-- <div class="info-bottom d-flex">
+            <div class="news">
+              <img src="assets/images/news-partner-img-1.png" alt="news-image-1">
+              <div class="news-info d-flex justify-content-between align-items-center">
+                <h5 style="text-align: left !important;">We are a <span>Snowflake & Databricks </span>Partner now</h5>
+                <a routerLink="#" class="arrow"><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="news">
+              <img src="assets/images/news-partner-img-2.jpg" alt="news-image-1">
+              <div class="news-info d-flex justify-content-between align-items-center">
+                <h5 style="text-align: left !important;">Announcing QBrainX Partnership with <span>Salesforce</span></h5>
+                <a routerLink="#" class="arrow"><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div> -->
+          <img src="assets/images/Buzz @ QBrainX.png" alt="title-text" class="side-title">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Section End -->
+
+<!-- Life at QBrainX Section Start -->
+<section class="life-at-section">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-12 title text-center">
+        <span>-LIFE @ QBRAINX-</span>
+        <!-- <h2>We are equal, just do different roles!</h2> -->
+        <h2>{{LifeAtQbTitle}}</h2>
+        <!-- <p>QBrainX is headquartered in USA. Our team of 200+ is split between USA, UAE and India.</p> -->
+        <p>{{LifeAtQbSubTitle}}</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <img src="assets/images/life-at-image.png" class="life-at-image" alt="life-at-image" class="pt-3">
+
+        <div #testDiv class="d-flex justify-content-end text-white life-at-info">
+        
+          <div class="info">
+            <span id="count1" class="display-4 main-txt-counter">{{Established}}</span>
+            <pre class="sub-txt-counter">ESTABLISHED</pre>
+          </div>
+          
+          <div class="info">
+            <span id="count2" class="display-4 main-txt-counter">{{clients}}</span><span class="plus-txt">+</span>
+            <pre class="sub-txt-counter">CLIENTS</pre>
+          </div>
+          
+          <div class="info">
+            <span id="count3" class="display-4 main-txt-counter">{{projects}}</span><span class="plus-txt">+</span>
+            <pre class="sub-txt-counter">PROJECTS</pre>
+          </div>  
+        </div>
+      </div>
+    </div>
+      
+  </div>
+</section>
+<!-- Life at Section End -->
+
+<!-- Product Section Start -->
+<section class="product-section">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-md-6 product-info">
+          <div class="d-flex flex-column">
+          <span>-OUR PRODUCTS-</span>
+          <a routerLink="#"><img src="assets/images/flexcub-logo.svg" alt="Product-logo" width="150px"/></a>
+          </div>
+          <h2>A modernist way to hire IT contractors</h2>
+          <p>By implementing efficiency through transparency, we are able to deliver better service and quality brains with greater value for your money.</p>
+          <a class="btn" href="https://flexcub.com/" target="_blank">Discover More</a>        
+      </div>
+      <div class="col-md-6 product-image">
+        <img src="assets/images/dashboard-image-1.jpg" alt="product-dashboard" width="100%">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Product Section End -->
+
+<!-- what we Offering Section Start-->
+<section id="features" class="features">
+  <div class="container" data-aos="fade-up">
+    
+    <div class="row">
+      <div class="col-md-12 title text-center">
+        <span>--WHAT WE OFFER--</span>
+        <h2>Our Experienced Fields</h2>
+      </div>
+    </div>
+
+    <!-- <ul class="nav nav-tabs row gy-4 d-flex">
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+          <i class="bi bi-wallet2"></i>
+          <h4>Banking & Finance</h4>
+        </a>
+      </li>
+      
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+          <i class="bi bi-briefcase"></i>
+          <h4>Business Consulting</h4>
+        </a>
+      </li>
+      
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+          <i class="bi bi-window-fullscreen"></i>
+          <h4>Software & Hi-Tech</h4>
+        </a>
+      </li>
+      
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+          <i class="bi bi-command"></i>
+          <h4>Manufacturing</h4>
+        </a>
+      </li>
+      
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+          <i class="bi bi-airplane"></i>
+          <h4>Travel</h4>
+        </a>
+      </li>
+      
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+          <i class="bi bi-activity"></i>
+          <h4>Health Care</h4>
+        </a>
+      </li>
+      
+
+    </ul> -->
+
+    <div class="tab-content" *ngFor="let field of fieldArray;let i=index">
+
+      <div class="tab-pane show" [ngClass]="{ 'active' : fieldSelected == i }" id="tab-1">
+        <div class="row gy-4">
+          <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <h3>{{field.heading}}</h3>
+            <p class="info">
+              {{field.description}}
+            </p>
+            <!-- <ul *ngFor="let list of field.list">
+              <li><i class="bi bi-check-circle-fill"></i>{{list.list}}</li>
+            </ul> -->
+            
+            <div class="indicator">
+              <a  class="arrow" (click)="previous()"><i class="bi bi-arrow-left"></i></a>
+              <a  class="arrow" (click)="next()" ><i class="bi bi-arrow-right"></i></a>
+            </div>
+
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+            <img src="data:image/{{field.extension}};base64,{{field.image}}" alt="..." class="img-fluid">
+          </div>
+        </div>
+      </div>
+      
+      <!-- End Tab Content 1 -->
+
+      <!-- <div class="tab-pane active" id="tab-2" value="2" [(ngModel)]="fieldSelected">
+        <div class="row gy-4">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <h3>Business Consulting</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            
+            <div class="indicator">
+              <a routerLink="#" class="arrow"><i class="bi bi-arrow-left"></i></a>
+              <a routerLink="#" class="arrow"><i class="bi bi-arrow-right"></i></a>
+            </div>
+
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center">
+            <img src="assets/images/business-consulting.webp" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>End Tab Content 2 -->
+
+      <!-- <div class="tab-pane" id="tab-3" value="3" [(ngModel)]="fieldSelected">
+        <div class="row gy-4">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <h3>Software & Hi-Tech</h3>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+            </ul>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+
+            <div class="indicator">
+              <a routerLink="#" class="arrow"><i class="bi bi-arrow-left"></i></a>
+              <a routerLink="#" class="arrow"><i class="bi bi-arrow-right"></i></a>
+            </div>
+
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center">
+            <img src="assets/images/software.webp" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>End Tab Content 3 -->
+
+      <!-- <div class="tab-pane" id="tab-4" value="4" [(ngModel)]="fieldSelected">
+        <div class="row gy-4">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <h3>Manufacturing</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+
+            <div class="indicator">
+              <a routerLink="#" class="arrow"><i class="bi bi-arrow-left"></i></a>
+              <a routerLink="#" class="arrow"><i class="bi bi-arrow-right"></i></a>
+            </div>
+
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center">
+            <img src="assets/images/manufacturing.webp" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>End Tab Content 4 -->
+
+      <!-- <div class="tab-pane" id="tab-5" value="5" [(ngModel)]="fieldSelected">
+        <div class="row gy-4">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <h3>Travel</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+
+            <div class="indicator">
+              <a routerLink="#" class="arrow"><i class="bi bi-arrow-left"></i></a>
+              <a routerLink="#" class="arrow"><i class="bi bi-arrow-right"></i></a>
+            </div>
+
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center">
+            <img src="assets/images/travel.webp" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>End Tab Content 5 -->
+
+      <!-- <div class="tab-pane" id="tab-6" value="6" [(ngModel)]="fieldSelected">
+        <div class="row gy-4">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <h3>Health Care</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+
+            <div class="indicator">
+              <a routerLink="#" class="arrow"><i class="bi bi-arrow-left"></i></a>
+              <a routerLink="#" class="arrow"><i class="bi bi-arrow-right"></i></a>
+            </div>
+
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center">
+            <img src="assets/images/health-care.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>End Tab Content 6 -->
+
+    </div>
+
+  </div>
+</section>
+<!-- what we offering section End -->
+
+<!-- Leadership talk section start -->
+<section class="leadership-section">
+  <div class="container">
+    <div class="row d-flex align-items-center leadership-info">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 leadership-info">
+        <h2>Leadership Talks</h2>
+        <p>Our Vice President, Padma speaks about QBrainX culture, business vision and our mission to achieve in the year.</p>
+        <a href="https://www.youtube.com/watch?v=zT1BkRc9bYQ" target="_blank" class="btn">Watch Now</a>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 leadership-image">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/zT1BkRc9bYQ" allowfullscreen></iframe>
+        </div>
+        <!-- <iframe class="ratio ratio-16X9" src="https://www.youtube.com/embed/zT1BkRc9bYQ" width="100%" allowfullscreen></iframe> -->
+        <!-- <a routerLink="#"><img src="assets/images/youtube-snapshot.png" alt="Leadership-talk-image" width="100%"></a> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Leadership talk section end -->
+
+<!-- Contact Section Start -->
+<section class="contat-section">
+  <div class="container">
+    <div class="row d-flex align-items-center flex-row">
+      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+        <span>-REACH US-</span>
+        <h2>Our Offices</h2>
+
+        <div class="contact-info d-flex">
+          <div class="detail phone" *ngFor="let ph of phone">
+            <h5>Phone</h5>
+            <a routerLink="tel:+180 486 969 04">{{ph}}</a>
+          </div>
+          <div class="detail email">
+            <h5>Email</h5>
+            <a routerLink="mail-to:contact@qbrainx.com">contact@qbrainx.com</a>
+          </div>
+        </div>
+
+        <div class="col-md-12 address-info d-flex">
+          <div class="address col-xl-4 col-lg-4 col-md-8 col-sm-12" *ngFor="let Address of Address">
+            <div class="address-details">
+              <h5>{{Address.city}}</h5>
+              <p class="m-0">{{Address.Address}}</p>
+            </div>
+          </div>
+        </div>
+       
+
+        <div class="location col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex align-items-center" >
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4" *ngFor="let country of AddressArray;let i = index ">
+            <div class="country text-center"  [ngClass]="{ 'active' : activeButton == i }" (click)="setActive(i)">
+              <img src="{{country.imgSrc}}" width="100px">
+              <p class="name m-0">{{country.country}}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4 contact-image">
+        <img src="assets/images/qbx-piller.png">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section End -->
+
+

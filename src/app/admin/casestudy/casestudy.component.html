@@ -1,0 +1,60 @@
+<div class="card banner-wrp">
+    <div class="card-header">
+        <div class="pull-left">
+            <h4 class="card-title">Case Studies Update</h4>
+        </div>
+        <div class="pull-right">
+            <button type="button" class="btn btn-primary light px-3" data-bs-toggle="modal"
+                data-bs-target="#">
+                <i class="fa fa-trash"></i>
+            </button>
+            <button type="button" class="btn btn-primary light px-3" data-bs-toggle="modal"
+                data-bs-target="#">
+                <i class="fa fa-edit"></i></button>
+        </div>
+    </div>
+    <div class="col-md-12">
+
+        <div class="card-body">
+            <div class="basic-form">
+                <form>
+
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg">Title</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-lg" formControlName="Title" placeholder="Title">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg">Sub Title</label>
+                        <div class="col-sm-10">
+
+                            <textarea class="form-control" rows="4" id="comment" formControlName="SubTitle"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg">Case Studies Banner</label>
+                        <div class="col-sm-10 form-file">
+                            <input type="file" class="form-file-input form-control" formControlName="BannerImage">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg">Case Studies Details</label>
+                        <div class="col-sm-10">
+                            <!-- <quill-editor formControlName="BlogDetails" [config]="quillConfig"></quill-editor> -->
+                        </div>
+                    </div>
+                    
+
+                    <button type="submit" class="btn btn-primary">Add Case Studies</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,71 @@
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+}
+
+.webinar-info {
+    padding: 30px 25px;
+    box-shadow: 3px 4px 30px rgba(136,136,136,.1);
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 30px auto;
+
+    h4 {
+        padding-top: 25px;
+    }
+}
+
+.webinar-right-info {
+
+    .webinar-btn {
+        background-color: #bb0b0b;
+        border: 1px solid #bb0b0b;
+        color: #ffffff;
+    }
+
+    .webinar-btn:hover {
+        background-color: #ffffff;        
+        color: #bb0b0b;
+    }
+}
+
+.form-inner input,
+.form-inner textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    transition: all .5s ease
+}
+
+.form-inner input::placeholder,
+.form-inner textarea::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color2);
+    font-family: poppins, sans-serif
+}
+
+.form-inner input:focus,
+.form-inner textarea:focus {
+    border: 1px solid var(--primary-color1)
+}
+
+.modal-footer {
+    justify-content: flex-start;
+
+    .btn-download {
+        background-color: #bb0b0b;
+        color: #ffffff;
+        border: 1px solid #bb0b0b;
+    }
+
+    .btn-download:hover {
+        background-color: #ffffff;
+        color: #bb0b0b;
+    }
+}

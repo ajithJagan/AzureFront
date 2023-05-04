@@ -1,0 +1,237 @@
+.pt-100 {
+    padding-top: 100px
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.inner-banner {
+    min-height: 400px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/../assets/images/inner-banner.png');
+    background-position: bottom;
+    background-size: cover;
+
+    .inner-bannerdot {
+        position: absolute;
+        bottom: 10px;
+        left: 20%;
+        opacity: 0.9;
+        animation: move 10s linear infinite alternate;
+    }
+
+    .inner-bannerwave {
+        position: absolute;
+        bottom: 0;
+        right: 0%;
+        opacity: 0.1;
+    }
+
+    .inner-banner-title {
+        font-size: 55px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+}
+
+.documentation-tab-wrap {
+    
+    .nav-pills .nav-link.active {
+        color: #ffffff;
+        background-color: #bb0b0b;
+    }
+
+    button.nav-link {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0 5px;
+    }
+
+    .nav-pills .nav-link {
+        background: 0 0;
+        border: 0;
+        border-radius: 0.25rem;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #212529;
+    }
+
+    .tab-content>.active {
+        display: block;
+    }
+
+    .tab-content {
+        .jobpost-item {
+            padding: 30px 25px;
+            box-shadow: 3px 4px 30px rgb(136 136 136 / 18%);
+        }
+        .hover-border2 {
+            background: #ffffff;
+            position: relative;
+            z-index: 1;
+        }
+        .hover-border2::before {
+            content: "";
+            width: 0%;
+            height: 2px;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            background: #bb0b0b;
+            transition: all 0.52s;
+            z-index: -1;
+        }
+        .jobpost-item {
+        
+            .job-header {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .icon {
+                    margin-right: 15px;
+                    transition: 400ms ease-out 25ms;
+                }
+
+                h4.title {
+                    margin-bottom: 0;
+
+                    a {
+                        font-size: 25px;
+                        font-weight: 700;
+                        color: #18212e;
+                    }
+                }
+            }
+
+            .job-body {
+                border-top: 1px solid #eee;
+                padding-top: 15px;
+
+                .para {
+                    font-size: 15.5px;
+                    font-weight: 400;
+                    color: #676767;
+                    font-family: poppins, sans-serif;
+                    line-height: 28px;
+                }
+
+                p {
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                }
+
+                .job-meta {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    margin: 20px 0 0;
+                    padding: 0;
+
+                    li:first-child {
+                        margin-right: 40px;
+                    }
+
+                    .bi-time {
+                        color: #0A1C76;
+                    }
+
+                    i.bi {
+                        vertical-align: middle;
+                    }
+
+                    .bi {
+                        font-family: boxicons!important;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-variant: normal;
+                        line-height: 1;
+                        text-rendering: auto;
+                        display: inline-block;
+                        text-transform: none;
+                        speak: none;
+                        -webkit-font-smoothing: antialiased;
+                    }
+                }
+                
+                ul {
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
+
+.join-section {
+    overflow: hidden;
+    position: relative;
+}
+
+.joinus-area {
+    background-image: url('/../assets/images/joinus-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 1, 12, 0.8);
+    background-blend-mode: multiply;
+    min-height: 290px;
+    padding: 80px 7%;
+    border-radius: 5px;
+    min-width: 100%;
+    justify-content: center;
+    position: relative;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: cuprum, sans-serif;
+        color: #ffffff;
+        line-height: 1.5;
+    }
+
+    .eg-btn {
+        border-radius: 5px;
+        text-align: center;
+        display: inline-block;
+        transition: all 0.4s ease;
+        text-transform: capitalize;
+    }
+
+    .btn--primary:hover {
+        color: #bb0b0b;
+        background-color: #ffffff;
+    }
+
+    .btn--primary {
+        background: #bb0b0b;
+        position: relative;
+        z-index: 1;
+        white-space: nowrap;
+    }
+
+    .joinus-btn {
+        padding: 14px 45px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: poppins, sans-serif;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
